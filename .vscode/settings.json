@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "ostream": "cpp",
+        "stop_token": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "*.ipp": "cpp",
+        "string_view": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "vector": "cpp",
+        "bitset": "cpp"
+    }
+}

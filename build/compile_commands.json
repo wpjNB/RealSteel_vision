@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/wpj/video_armor_2/build",
+  "command": "/usr/bin/g++  -I/home/wpj/video_armor_2/Armor -isystem /usr/local/include/opencv4 -g -o CMakeFiles/main.dir/src/main.cpp.o -c /home/wpj/video_armor_2/src/main.cpp",
+  "file": "/home/wpj/video_armor_2/src/main.cpp"
+},
+{
+  "directory": "/home/wpj/video_armor_2/build",
+  "command": "/usr/bin/g++  -I/home/wpj/video_armor_2/Armor -isystem /usr/local/include/opencv4 -g -o CMakeFiles/main.dir/Armor/ArmorDescriptor.cpp.o -c /home/wpj/video_armor_2/Armor/ArmorDescriptor.cpp",
+  "file": "/home/wpj/video_armor_2/Armor/ArmorDescriptor.cpp"
+},
+{
+  "directory": "/home/wpj/video_armor_2/build",
+  "command": "/usr/bin/g++  -I/home/wpj/video_armor_2/Armor -isystem /usr/local/include/opencv4 -g -o CMakeFiles/main.dir/Armor/ArmorDetor.cpp.o -c /home/wpj/video_armor_2/Armor/ArmorDetor.cpp",
+  "file": "/home/wpj/video_armor_2/Armor/ArmorDetor.cpp"
+},
+{
+  "directory": "/home/wpj/video_armor_2/build",
+  "command": "/usr/bin/g++  -I/home/wpj/video_armor_2/Armor -isystem /usr/local/include/opencv4 -g -o CMakeFiles/main.dir/Armor/ArmorNumClassifier.cpp.o -c /home/wpj/video_armor_2/Armor/ArmorNumClassifier.cpp",
+  "file": "/home/wpj/video_armor_2/Armor/ArmorNumClassifier.cpp"
+},
+{
+  "directory": "/home/wpj/video_armor_2/build",
+  "command": "/usr/bin/g++  -I/home/wpj/video_armor_2/Armor -isystem /usr/local/include/opencv4 -g -o CMakeFiles/main.dir/Armor/ArmorParam.cpp.o -c /home/wpj/video_armor_2/Armor/ArmorParam.cpp",
+  "file": "/home/wpj/video_armor_2/Armor/ArmorParam.cpp"
+}
+]
