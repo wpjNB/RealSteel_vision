@@ -357,4 +357,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/wpj/video_armor_2/src/main.cpp \
  /home/wpj/video_armor_2/Armor/ArmorDetor.h \
  /home/wpj/video_armor_2/Armor/ArmorParam.h \
  /home/wpj/video_armor_2/Armor/ArmorDescriptor.h \
- /home/wpj/video_armor_2/Armor/LightDescriptor.h
+ /home/wpj/video_armor_2/Armor/LightDescriptor.h \
+ /home/wpj/video_armor_2/Armor/ArmorNumClassifier.h \
+ /usr/local/include/opencv4/opencv2/ml/ml.hpp \
+ /home/wpj/video_armor_2/Armor/ArmorDescriptor.h

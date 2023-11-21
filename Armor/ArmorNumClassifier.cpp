@@ -37,7 +37,7 @@ void ArmorNumClassifier::loadImg(Mat &srcImg)
 
     // preprocess srcImg for the goal of acceleration
     cvtColor(warpPerspective_src, warpPerspective_src, 6); // CV_BGR2GRAY=6
-    threshold(warpPerspective_src, warpPerspective_src, 10, 255, THRESH_BINARY);
+    threshold(warpPerspective_src, warpPerspective_src, 40, 255, THRESH_BINARY);
 }
 void ArmorNumClassifier::getArmorImg(ArmorDescriptor &armor)
 {
@@ -58,5 +58,5 @@ void ArmorNumClassifier::setArmorNum(ArmorDescriptor &armor)
     p.convertTo(p, CV_32FC1);
 
     // set armor number according to the result of SVM
-    armor.ArmorNum = (int)svm->predict(p);
+    armor.armorNum = (int)svm->predict(p);
 }

@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
     detector.loadSVMModel("/home/wpj/123svm.xml");
     detector.SetCamParam("/home/wpj/test_opencv (1)/src/out_camera_data.xml");
     detector.SetPoint3D(SMALL_ARMOR, 200, 150);
-    VideoCapture cap(2);                 // 打开摄像头
-    cap.set(CAP_PROP_FRAME_WIDTH, 640);  // 宽度
-    cap.set(CAP_PROP_FRAME_HEIGHT, 480); // 高度
-    cap.set(CAP_PROP_EXPOSURE, 50);      // 曝光 50
+    VideoCapture cap("/home/wpj/1234567.mp4"); // 打开摄像头
+    // cap.set(CAP_PROP_FRAME_WIDTH, 640);  // 宽度
+    // cap.set(CAP_PROP_FRAME_HEIGHT, 480); // 高度
+    // cap.set(CAP_PROP_EXPOSURE, 50);      // 曝光 50
 
     if (!cap.isOpened())
         return false;
@@ -33,13 +33,11 @@ int main(int argc, char *argv[])
         detector.loadImg(frame);
         detector.detect();
         detector.ShowImg(1, 1, 1); // 原图，测试图，二值化
-
         double yaw = 0, pitch = 0, distance = 0;
-        if (detector.GetDetectState() == 1) // 显示pitch yaw
-            detector.showDebuginfo();
-
         double t2 = (double)getTickCount();
         int fps = getTickFrequency() / (t2 - t1);
+        if (detector.GetDetectState() == 1) // 显示pitch yaw
+            detector.showDebuginfo();
         cout << "fps:" << fps << endl;
         waitKey(29);
         char key = waitKey(1);

@@ -40,18 +40,18 @@ ArmorDescriptor::ArmorDescriptor(const LightDescriptor &lLight, const LightDescr
     vertex[2] = lower_r;
     vertex[3] = lower_l;
 
-    Rect ROI = boundingRect(vertex);
-    armorROI = srcimg(ROI);
+    // Rect ROI = boundingRect(vertex);
+    // armorROI = srcimg(ROI);
 
     // 设置装甲板类型
     type = armorType;
-    // 保存装甲板的图像
+    // // 保存装甲板的图像
 
-    rotationScore = rotaScore;
+    // rotationScore = rotaScore;
 
-    // 计算尺寸分数
-    float normalized_area = contourArea(vertex) / _param.area_normalized_base;
-    sizeScore = exp(normalized_area);
+    // // 计算尺寸分数
+    // float normalized_area = contourArea(vertex) / _param.area_normalized_base;
+    // sizeScore = exp(normalized_area);
 
     // 计算装甲板和roi图像中心区域的距离分数
     // Point2f srcImgCenter(grayImg.cols / 2, grayImg.rows / 2);

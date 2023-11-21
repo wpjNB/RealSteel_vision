@@ -831,7 +831,10 @@ CMakeFiles/main.dir/Armor/ArmorDetor.cpp.o: ../Armor/ArmorDetor.cpp \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   ../Armor/ArmorParam.h \
   ../Armor/ArmorDescriptor.h \
-  ../Armor/LightDescriptor.h
+  ../Armor/LightDescriptor.h \
+  ../Armor/ArmorNumClassifier.h \
+  /usr/local/include/opencv4/opencv2/ml/ml.hpp \
+  ../Armor/ArmorDescriptor.h
 
 CMakeFiles/main.dir/Armor/ArmorNumClassifier.cpp.o: ../Armor/ArmorNumClassifier.cpp \
   /usr/include/stdc-predef.h \
@@ -1247,7 +1250,10 @@ CMakeFiles/main.dir/Armor/ArmorNumClassifier.cpp.o: ../Armor/ArmorNumClassifier.
   /usr/local/include/opencv4/opencv2/ml/ml.hpp \
   /usr/local/include/opencv4/opencv2/imgproc/types_c.h \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
-  /usr/local/include/opencv4/opencv2/core/types_c.h
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  ../Armor/ArmorDescriptor.h \
+  ../Armor/LightDescriptor.h \
+  ../Armor/ArmorParam.h
 
 CMakeFiles/main.dir/Armor/ArmorParam.cpp.o: ../Armor/ArmorParam.cpp \
   /usr/include/stdc-predef.h \
@@ -1670,7 +1676,10 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   ../Armor/ArmorDetor.h \
   ../Armor/ArmorParam.h \
   ../Armor/ArmorDescriptor.h \
-  ../Armor/LightDescriptor.h
+  ../Armor/LightDescriptor.h \
+  ../Armor/ArmorNumClassifier.h \
+  /usr/local/include/opencv4/opencv2/ml/ml.hpp \
+  ../Armor/ArmorDescriptor.h
 
 
 ../src/main.cpp:

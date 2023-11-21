@@ -834,6 +834,9 @@ CMakeFiles/main.dir/Armor/ArmorDetor.cpp.o
  /home/wpj/video_armor_2/Armor/ArmorParam.h
  /home/wpj/video_armor_2/Armor/ArmorDescriptor.h
  /home/wpj/video_armor_2/Armor/LightDescriptor.h
+ /home/wpj/video_armor_2/Armor/ArmorNumClassifier.h
+ /usr/local/include/opencv4/opencv2/ml/ml.hpp
+ /home/wpj/video_armor_2/Armor/ArmorDescriptor.h
 
 CMakeFiles/main.dir/Armor/ArmorNumClassifier.cpp.o
  /home/wpj/video_armor_2/Armor/ArmorNumClassifier.cpp
@@ -1251,6 +1254,9 @@ CMakeFiles/main.dir/Armor/ArmorNumClassifier.cpp.o
  /usr/local/include/opencv4/opencv2/imgproc/types_c.h
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
+ /home/wpj/video_armor_2/Armor/ArmorDescriptor.h
+ /home/wpj/video_armor_2/Armor/LightDescriptor.h
+ /home/wpj/video_armor_2/Armor/ArmorParam.h
 
 CMakeFiles/main.dir/Armor/ArmorParam.cpp.o
  /home/wpj/video_armor_2/Armor/ArmorParam.cpp
@@ -1676,4 +1682,7 @@ CMakeFiles/main.dir/src/main.cpp.o
  /home/wpj/video_armor_2/Armor/ArmorParam.h
  /home/wpj/video_armor_2/Armor/ArmorDescriptor.h
  /home/wpj/video_armor_2/Armor/LightDescriptor.h
+ /home/wpj/video_armor_2/Armor/ArmorNumClassifier.h
+ /usr/local/include/opencv4/opencv2/ml/ml.hpp
+ /home/wpj/video_armor_2/Armor/ArmorDescriptor.h
 

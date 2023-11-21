@@ -66,6 +66,7 @@ public:
 
     // 是否有装甲板
     bool GetDetectState();
+
     // 设置目标装甲板
     void SetTargetArmor();
     bool armorCompare();

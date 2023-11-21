@@ -47,7 +47,7 @@ public:
     std::vector<cv::Point2f> vertex; // 装甲板的四个顶点，不包括光条区域
     cv::Mat frontImg;                // 单通道的装甲板图案
 
-    int ArmorNum; // number on armor(recognized by SVM) 装甲板上的数字（用SVM识别得到）
+    int armorNum; // number on armor(recognized by SVM) 装甲板上的数字（用SVM识别得到）
     Mat armorROI; // 数字所在的ROI图像
     Mat armorImg; // image of armor set by getArmorImg() from ArmorNumClassifier() 装甲板的图片（透射变换获得）
     ArmorType type;

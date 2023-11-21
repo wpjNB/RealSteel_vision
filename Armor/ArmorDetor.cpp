@@ -228,7 +228,7 @@ void ArmorDetector::draw_armor(Mat &img, const vector<ArmorDescriptor> &armors)
             points.push_back(Point(static_cast<int>(armors[i].vertex[j].x), static_cast<int>(armors[i].vertex[j].y)));
         }
 
-        polylines(img, points, true, Scalar(0, 255, 0), 1, 8, 0); // 绘制两个不填充的多边形
+        polylines(img, points, true, Scalar(0, 255, 0), 2, 8, 0); // 绘制两个不填充的多边形
     }
 }
 // 匹配灯条，筛选出装甲板
@@ -294,10 +294,12 @@ vector<ArmorDescriptor> ArmorDetector::matchArmor(vector<LightDescriptor> &light
             float yOff = yDiff / meanLen;
             float rotationScore = -(ratiOff * ratiOff + yOff * yOff);
             // 得到匹配的装甲板
-            ArmorDescriptor armor(leftLight, rightLight, armorType, _debugImg, rotationScore, _param);
+            ArmorDescriptor armor(leftLight, rightLight, armorType, _roiImg, rotationScore, _param);
+            // imshow("ROI", armor.armorROI);
 
-            NumClassifier.loadImg(armor.armorROI);
+            NumClassifier.loadImg(_srcImg);
             NumClassifier.getArmorImg(armor);
+            // imshow("armorImg", armor.armorImg);
             NumClassifier.setArmorNum(armor);
 
             armors.emplace_back(armor);
@@ -412,8 +414,13 @@ void ArmorDetector::ShowImg(bool showSrcON, bool showDebugON, bool showBinaryON)
 void ArmorDetector::showDebuginfo()
 {
     Mat img = Mat::zeros(250, 400, CV_8UC3);
+    // if (detectstate == ARMOR_FOUND)
+    //     putText(img, "ARMOR_FOUND", Point(100, 35), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
+    // else
+    //     putText(img, "ARMOR_NOFOUND", Point(100, 35), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
     putText(img, format("Dis: %.1f", dis), Point(100, 140), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
     putText(img, format("pitch: %.1f", pitch), Point(100, 70), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
     putText(img, format("yaw: %.1f", yaw), Point(100, 105), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
+    putText(img, format("TargetNum: %d", _armors[0].armorNum), Point(100, 175), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 255), 2, 8, false);
     imshow("AngleSolver", img);
 }
